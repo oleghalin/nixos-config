@@ -28,6 +28,7 @@ with pkgs; [
   kompose
   kubectl
   krew
+  # helm
 
   # Media-related packages
   dejavu_fonts
