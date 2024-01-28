@@ -22,13 +22,17 @@ with pkgs; [
   libfido2
   pinentry
 
+  # php 
+  php
+  php82Packages.composer
+
   # Cloud-related tools and SDKs
   docker
   docker-compose
   kompose
   kubectl
   krew
-  # helm
+  kubernetes-helm
 
   # Media-related packages
   dejavu_fonts
@@ -41,7 +45,8 @@ with pkgs; [
   meslo-lgs-nf
 
   # Node.js development tools
-  nodePackages.npm # globally install npm
+  nodePackages.npm
+  nodePackages.pnpm
   nodePackages.prettier
   nodejs
 

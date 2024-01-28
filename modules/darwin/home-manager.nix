@@ -23,9 +23,9 @@ in
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
     
-    brews = [
-      "helm"
-    ];
+    # brews = [
+    #   "helm"
+    # ];
 
     # These app IDs are from using the mas CLI app
     # mas = mac app store

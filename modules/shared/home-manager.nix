@@ -34,7 +34,7 @@ let name = "Oleh Khalin";
       export PATH=$HOME/.local/share/bin:$PATH
 
       # Remove history data we don't want to see
-      export HISTIGNORE="pwd:ls:cd"
+      export HISTIGNORE="pwd:ls:cd"d
       
       # nix shortcuts
       shell() {
@@ -48,6 +48,8 @@ let name = "Oleh Khalin";
       alias ls='ls --color=auto'
 
       alias k='kubectl'
+      alias d='docker'
+      alias dc='docker compose'
     '';
   };
 
