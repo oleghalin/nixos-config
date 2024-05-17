@@ -15,6 +15,8 @@ with pkgs; [
   wget
   zip
 
+  lazygit
+
   # Encryption and security tools
   age
   age-plugin-yubikey
@@ -22,17 +24,18 @@ with pkgs; [
   libfido2
   pinentry
 
+  ngrok
+
   # php 
   php
   php82Packages.composer
 
   # Cloud-related tools and SDKs
-  docker
-  docker-compose
   kompose
   kubectl
   krew
   kubernetes-helm
+  kubelogin-oidc
 
   # Media-related packages
   dejavu_fonts
@@ -47,8 +50,13 @@ with pkgs; [
   # Node.js development tools
   nodePackages.npm
   nodePackages.pnpm
+  nodePackages.yarn
   nodePackages.prettier
+  nodePackages.vercel
   nodejs
+  deno
+
+  golangci-lint
 
   # Text and terminal utilities
   htop
@@ -66,4 +74,9 @@ with pkgs; [
   # Python packages
   python39
   python39Packages.virtualenv # globally install virtualenv
+
+  cargo
+  rustc
+
+  awscli2
 ]

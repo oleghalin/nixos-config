@@ -21,11 +21,20 @@ in
 
   homebrew = {
     enable = true;
-    casks = pkgs.callPackage ./casks.nix {};
     
-    # brews = [
-    #   "helm"
-    # ];
+    casks = pkgs.callPackage ./casks.nix {};
+
+    brews = [
+      "argocd"
+      "virtctl"
+      "vcluster"
+      "vault"
+      "cmake"
+      "gitleaks"
+      "watchman"
+      "chart-testing"
+      "dive"
+    ];
 
     # These app IDs are from using the mas CLI app
     # mas = mac app store

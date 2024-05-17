@@ -4,6 +4,10 @@ let name = "Oleh Khalin";
     user = "oleghalin";
     email = "oleghalinua@gmail.com"; in
 {
+  neovim = {
+    enable = true;
+  }; 
+
   # Shared shell configuration
   zsh = {
     enable = true;
@@ -32,6 +36,7 @@ let name = "Oleh Khalin";
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
+      export PATH=$HOME/.rd/bin:$PATH
 
       # Remove history data we don't want to see
       export HISTIGNORE="pwd:ls:cd"d
@@ -50,6 +55,8 @@ let name = "Oleh Khalin";
       alias k='kubectl'
       alias d='docker'
       alias dc='docker compose'
+
+      alias t="tmux"
     '';
   };
 
@@ -184,6 +191,12 @@ let name = "Oleh Khalin";
 
   ssh = {
     enable = true;
+  };
+
+  direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
   };
 
   tmux = {

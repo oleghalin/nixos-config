@@ -24,4 +24,6 @@ _:
   "arc"
   "google-chrome"
   "firefox"
+
+  "rancher"
 ]
